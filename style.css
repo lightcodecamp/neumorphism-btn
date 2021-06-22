@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(224, 229, 236);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 1.5s linear;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.heart i {
+  color: rgb(226, 45, 72);
+  transition: all 0.5s linear;
+}
+
+.euro,
+.dollar i {
+  color: rgb(4, 138, 161);
+  transition: all 0.5s linear;
+}
+
+.box:hover {
+  box-shadow: inset 9px 9px 16px rgb(163, 177, 198, 0.6),
+    inset -9px -9px 16px rgb(2555, 255, 255, 0.5);
+}
+
+.box:hover i {
+  text-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
